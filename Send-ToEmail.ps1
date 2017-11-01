@@ -15,7 +15,7 @@ function Send-ToEmail(){
 	$SMTPPort = 25
 	$SMTP_SSL = $false
 	$Username = "address@server.com";
-	$Password = "pa$$w0rd";
+	$Password = "pa55w0rd";
 	$FromAddress = "address@server.com";
 	
     $message = new-object Net.Mail.MailMessage;

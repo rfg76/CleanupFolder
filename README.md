@@ -11,10 +11,10 @@ It also sends an HTML report via email with the listo of files moved and deleted
 5. Enjoy
 
 ### Schedule execution
-Best way to execute this script is as a scheduled task:
+To execute this script as a scheduled task:
 1. Open TaskManager and select Create Basic task
 2. Enter a Name and a Description (optional)
-3. Choose the Trigger (Weekly is a good option)
+3. Choose the Trigger (ie. Weekly)
 4. In Action choose "Start a Program"
 5. In Program enter: Powershell.exe
 6. In Arguments enter: -nologo -noprofile -noninteractive -ExecutionPolicy Bypass -File U:\Complete\Path\CleanUpFolder.ps1

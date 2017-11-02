@@ -1,6 +1,19 @@
-# This script cleans up a Folder by moving the files older than N days to a temporary folder.
-# After N+M days the files are permanently deleted
-# It also sends an HTML report via email
+<#
+.SYNOPSIS
+    Cleans up a folder by moving the files older than N days. They are deleted after N+M days
+.DESCRIPTION
+    This script cleans up a Folder by moving the files older than N days to a temporary folder.
+	After N+M days the files are permanently deleted
+	It also sends an HTML report via email with the listo of files moved and deleted
+.NOTES
+    File Name      : CleanUpFolder.ps1
+    Author         : Roberto Figueroa
+	Date		   : 2017-11-01
+    Prerequisite   : PowerShell V2 over Vista and upper.
+.LINK
+    Script posted over:
+    https://github.com/rfg76/CleanupFolder
+#>
 
 # Source from other scripts
 $ScriptPath = Split-Path $MyInvocation.MyCommand.Path
@@ -12,7 +25,6 @@ $BasePath = "C:\Users\roberto\Downloads"
 $TempFolder = "C:\Users\roberto\Downloads\PorBorrarse"
 $days2Move = 120
 $days2Delete = 30
-$subdirs = $false
 $reportMoved = "$ScriptPath\archivos_movidos.html"
 $reportDeleted = "$ScriptPath\archivos_borrados.html"
 
